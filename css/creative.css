@@ -37,6 +37,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  /*--breakpoint-xxl: 1600px;*/
   --font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -587,6 +588,12 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1240px;
   }
 }
 
@@ -1233,7 +1240,7 @@ pre code {
 @media (min-width: 1200px) {
   .col-xl {
     flex-basis: 0;
-    flex-grow: 1;
+    flex-grow: 0;
     max-width: 100%;
   }
   .col-xl-auto {
@@ -2902,8 +2909,8 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
+  min-width: 4rem;
+  padding: 0.125rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212529;
@@ -4158,6 +4165,7 @@ input[type="button"].btn-block {
     padding-left: 0;
   }
 }
+
 
 @media (min-width: 1200px) {
   .navbar-expand-xl {
@@ -7437,17 +7445,11 @@ button.bg-dark:focus {
 
 .ml-icon{
   margin-left: -20rem !important;
-  margin-right: 1.5rem !important;
+  margin-right: 3rem !important;
 }
 
 .mr-icon{
   margin-right: 10rem !important;
-  margin-left: 1.5rem !important;
-}
-
-.m-icon{
-  margin-left: 1.5rem !important;
-  margin-right: 1.5rem !important;
 }
 
 .m-0 {
@@ -7579,6 +7581,11 @@ button.bg-dark:focus {
   margin-top: 3rem !important;
 }
 
+.mt-10,
+.my-10 {
+  margin-top: 6rem !important;
+}
+
 .mr-5,
 .mx-5 {
   margin-right: 3rem !important;
@@ -7592,6 +7599,11 @@ button.bg-dark:focus {
 .ml-5,
 .mx-5 {
   margin-left: 3rem !important;
+}
+
+.ml-10,
+.mx-10 {
+  margin-left: 5rem !important;
 }
 
 .p-0 {
@@ -7723,6 +7735,11 @@ button.bg-dark:focus {
   padding-top: 3rem !important;
 }
 
+.pt-10,
+.py-10 {
+  padding-top: 6rem !important;
+}
+
 .pr-5,
 .px-5 {
   padding-right: 3rem !important;
@@ -7846,6 +7863,11 @@ button.bg-dark:focus {
 .mt-n5,
 .my-n5 {
   margin-top: -3rem !important;
+}
+
+.mt-n10,
+.my-n10 {
+  margin-top: -6rem !important;
 }
 
 .mr-n5,
@@ -9588,7 +9610,7 @@ html {
 }
 
 .text-white-75 {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 hr.divider {
@@ -9653,6 +9675,7 @@ hr.light {
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
+    margin-left: -5rem;
   }
   #mainNav .navbar-brand:hover {
     color: #fff;
@@ -9684,7 +9707,6 @@ hr.light {
     color: #f4623a;
   }
 }
-
 
 header.masthead {
   padding-top: 10rem;
@@ -9820,7 +9842,40 @@ header.masthead-wedding-veronicakevin {
   }
 }
 
-/*****************************************************************************************************************/
+/*******************************************************************************************************************/
+
+/*header.masthead-newwedding {*/
+/*  padding-top: 10rem;*/
+/*  padding-bottom: calc(10rem - 72px);*/
+/*  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead-sports-ld.jpg");*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+/*  background-attachment: scroll;*/
+/*  background-size: cover;*/
+/*}*/
+
+/*@media (min-width: 992px) {*/
+/*  header.masthead-newwedding {*/
+/*    height: 100vh;*/
+/*    min-height: 40rem;*/
+/*    padding-top: 72px;*/
+/*    padding-bottom: 0;*/
+/*  }*/
+/*  header.masthead-newwedding p {*/
+/*    font-size: 1.15rem;*/
+/*  }*/
+/*  header.masthead-newwedding h1 {*/
+/*    font-size: 3rem;*/
+/*  }*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*  header.masthead-newwedding h1 {*/
+/*    font-size: 3.5rem;*/
+/*  }*/
+/*}*/
+
+/*******************************************************************************************************************/
 
 #portfolio .container-fluid {
   max-width: 1920px;
@@ -9897,7 +9952,7 @@ header.masthead-wedding-veronicakevin {
 }
 
 #team .container-fluid .team-box .team-box-caption .project-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #team .container-fluid .team-box:hover .team-box-caption {
